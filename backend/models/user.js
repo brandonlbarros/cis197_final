@@ -6,4 +6,5 @@ const userSchema = new Schema({
   admin: { type: Boolean, required: true }
 })
 
+
 module.exports = model('User', userSchema)

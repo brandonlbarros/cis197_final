@@ -20,13 +20,14 @@ router.get('/check', async (req, res) => {
 })
 
 router.post('/login', async (req, res, next) => {
-    const { username, password } = req.body
+    const { username, password, admin } = req.body
   
     try {
-      User.findOne({ username, password }, (err, user) => {
+      User.findOne({ username, password, admin }, (err, user) => {
         if (user) {
           req.session.username = username
           req.session.password = password
+          req.session.admin = admin
           res.send('logged in')
         } else {
           next(new Error('Login failed'))
