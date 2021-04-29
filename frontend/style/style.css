@@ -1,0 +1,59 @@
+.menuItem {
+    display: inline-block;
+    position: relative;
+    margin: 1%;
+    float: left;
+    width: 23%;
+    height: 40px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.homeSection {
+    text-align: center;
+
+}
+
+.textStandard {
+    font-family:'Optima';
+    text-align: center;
+}
+
+.textLeft {
+    font-family:'Optima';
+}
+
+.articleBody {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.loadingAnimate {
+    font-weight: 900;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.centerPage {
+    text-align: center;
+}
+
+.spacer {
+    min-height: 20px;
+}
+
+.spacerMini {
+    min-height: 10px;
+}

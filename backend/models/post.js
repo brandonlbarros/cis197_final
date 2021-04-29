@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const questionSchema = new Schema({
+const postSchema = new Schema({
   title: {type: String, required: true },
   articleText: { type: String, required: true},
   author: { type: String, required: true },
@@ -8,4 +8,4 @@ const questionSchema = new Schema({
   comments: { type: [(String)]}
 })
 
-module.exports = model('Question', questionSchema)
+module.exports = model('Post', postSchema)
